@@ -42,6 +42,10 @@ rm VBoxGuestAdditions_$VBOX_VERSION.iso
 sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
 sed -i "s/^\(.*env_keep = \"\)/\1PATH /" /etc/sudoers
 
+
+# Zero free space to aid VM compression
+dd if=/dev/zero of=/EMPTY bs=1M
+rm -f /EMPTY
 #poweroff -h
 
 exit
