@@ -18,9 +18,9 @@ yum -y erase gtk2 libX11 hicolor-icon-theme avahi freetype bitstream-vera-fonts
 yum -y clean all
 
 
-#Install Chef using the omnibus installer, Hardcoded to version 10.18
-curl -L https://opscode-omnitruck-release.s3.amazonaws.com/el/5/x86_64/chef-10.18.2-2.el5.x86_64.rpm > chef-10.18.2-2.el5.x86_64.rpm
-rpm -Uvh chef-10.18.2-2.el5.x86_64.rpm 
+#Install Chef using the omnibus installer, Hardcoded to version 11.0.0.1
+curl -L https://opscode-omnitruck-release.s3.amazonaws.com/el/5/x86_64/chef-11.0.0-1.el5.x86_64.rpm > chef-11.0.0-1.el5.x86_64.rpm
+rpm -Uvh chef-11.0.0-1.el5.x86_64.rpm
 
 #Installing vagrant keys
 mkdir /home/vagrant/.ssh
