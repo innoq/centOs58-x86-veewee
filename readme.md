@@ -3,7 +3,7 @@ This is [Veewee](https://github.com/jedi4ever/veewee) Template for a Centos 5.8 
 
 # How To build the Box
 
-		bunde install
+		bundle install
 		alias vagrant="bundle exec vagrant"
 		vagrant basebox build 'centOs58-x86'
 		vagrant basebox export centOs58-x86
